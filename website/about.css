@@ -55,14 +55,23 @@
     }
   }
   
+  a{
+    color: black; 
+    text-decoration: none; 
+  }
+
   body {
     margin: 0;
     padding: 0;
+    background-color: #F3F8F2;
   }
-
+  h2{
+      color:#000; 
+      font-family: 'Bebas Neue', cursive;
+  }
   .header{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/about.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -115,3 +124,47 @@
     background: rgba(0,0,0,0.5);
     padding: 30px;
   }
+
+  .description{
+    font-family: 'Jost', sans-serif;; 
+  }
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
