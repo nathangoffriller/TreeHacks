@@ -14,11 +14,23 @@
         <h1 class="welcome_msg">Welcome to SciSearch!</h1>
          <h1> Find Tech Opportunities Near You </h1>
          <div class ="form-box">
-           <input type="text" class="search-field roles" placeholder="Roles">
-           <input type="text" class="search-field location" placeholder="Location">
-           <button class="search-btn" type="button">Search</button>
-       </form>
+           <input type="text" id="field1" class="search-field roles" placeholder="Roles">
+           <input type="text" id= "field2" class="search-field location" placeholder="Location">
+           
+           <button class="search-btn" type="button" id= "search" onclick="handleClicked()"> Search </button>
+           <!-- <p id= "search"></p> -->
+           <script>
+            function handleClicked()
+            {
+              document.getElementById("search").innerHTML = "Hello World";
+            } 
+            </script>
+
+          </form>
      </div>
-     <h2 class="break"> Find Tech Opportunities Near You </h2>
+     <h2 class="break"> Find Tech Opportunities near You </h2>
+
+     
+
      <script src="app.js"></script>
 </html>
