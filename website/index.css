@@ -65,18 +65,17 @@
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/bg.jpg);
     background-size: cover;
     display: flex;
-    justify-content: center;
-    display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
   }
-  .welcome_section {
-    color: black;
+  .welcome_msg {
+    font-size: 65px;
   }
   h1{
-    color: #fff;
-    margin-bottom: 70px;
+    color: lightyellow;
+    margin-bottom: 60px;
     font-size: 45px;
     letter-spacing: 2px;
     text-align: center;
@@ -88,15 +87,12 @@
     border-radius: 25px;
     outline: none;
   }
-
   .roles {
     width: 400px;
   }
-
   .location {
     width: 200px;
   }
-
   .search-btn {
     height: 50px;
     width: 150px;
@@ -105,13 +101,22 @@
     color: #000;
     border-radius: 25px;
   }
-
   .search-btn:hover {
     background: #ffc107;
     cursor: pointer;
   }
-
   .form-box {
     background: rgba(0,0,0,0.5);
     padding: 30px;
+    margin-block-start: auto;
+    margin-bottom: -100px;
+  }
+  h2{
+    color: lightyellow;
+    text-align: center;
+  }
+  .break{
+    flex-basis: 100%;
+    width: 0;
+    margin-top: 0;
   }
