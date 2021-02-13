@@ -54,7 +54,6 @@
       border: 1px solid #ccc;
     }
   }
-  
   a{
     color: black; 
     text-decoration: none; 
@@ -68,20 +67,16 @@
   h2{
       color:#000; 
       font-family: 'Bebas Neue', cursive;
+      text-align: center;
   }
   .header{
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/about.jpg);
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/bg.jpg);
     background-size: cover;
-    display: flex;
-    justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-  }
-  .welcome_section {
-    color: black;
   }
   h1{
     color: #fff;
@@ -90,46 +85,13 @@
     letter-spacing: 2px;
     text-align: center;
   }
-  .search-field {
-    height: 50px;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    outline: none;
-  }
-
-  .roles {
-    width: 400px;
-  }
-
-  .location {
-    width: 200px;
-  }
-
-  .search-btn {
-    height: 50px;
-    width: 150px;
-    background: #ffeb3b;
-    border: none;
-    color: #000;
-    border-radius: 25px;
-  }
-
-  .search-btn:hover {
-    background: #ffc107;
-    cursor: pointer;
-  }
-
-  .form-box {
-    background: rgba(0,0,0,0.5);
-    padding: 30px;
-  }
-
   .description{
-    font-family: 'Jost', sans-serif;; 
+    font-family: 'Jost', sans-serif;
+    padding: 10px;
   }
-/* Animation */
 
+
+/* Animation */
 @keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
