@@ -16,6 +16,6 @@ Growing up in a small town, my school didn’t start computer science until I wa
 SciSearch has lots of room to grow. In the future, we hope to use more API's to increase the amount of opportunities provided on SciSearch. Hopefully one day, we can also accept opportunities from users as well.
 
 Collaborators:
-@Nathan Chin
-@Laura Siu
-@Auraiporn Auksorn
+Nathan Chin @nathangoffriller
+Laura Siu @lmsiu
+Auraiporn Auksorn @Auraiporn
