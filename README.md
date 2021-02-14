@@ -3,9 +3,6 @@
 
 This website shows users Computer Science opportunities around them.
 
-### Demo
-<img src='SciSearch Demo.gif' title='SciSearch Demo' width='' alt='Video Walkthrough' />
-
 ### How we built it
 SciSearch was built using HTML, JavaScript, ArcGIS, and Firebox. HTML and JavaScript were for the front-end and back-end development respectively, ArcGIS was used for the map features, and Firebox was used to launch our app. 
 
