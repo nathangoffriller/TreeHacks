@@ -16,7 +16,7 @@
 }
 
 .active{
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Jost', sans-serif;
   }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -77,7 +77,7 @@ h1{
   font-size: 45px;
   letter-spacing: 2px;
   text-align: center;
-  font-family: cursive;
+  font-family: 'Jost', sans-serif;
 }
 .search-field {
   height: 50px;
