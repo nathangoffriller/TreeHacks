@@ -25,6 +25,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const firestore = firebase.firestore();
 
 'use strict'
 
