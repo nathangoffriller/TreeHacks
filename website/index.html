@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,18 +8,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <script type="module" src="milsymbol-2.0.0/src/milsymbol.js"></script>
   <script src="https://js.arcgis.com/4.18/"></script>
-  <script src="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
   <base href="https://scisearch.firebaseapp.com/">
   </base>
   <script type="text/javascript" src="https://scisearch.firebaseapp.com/runtime.a66f828dca56eeb90e02.js"></script>
   <script type="text/javascript" src="https://scisearch.firebaseapp.com/polyfills.14fc14f3e029a8cfd046.js"></script>
   <script type="text/javascript" src="https://SciSearch.firebaseapp.com/main.2eb2046276073df361f7.js"></script>
+</head>
 
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a class="active" href="about.html">About Us</a>
-    <input type="text" placeholder="Search..">
-  </div>
+<body>
+  <header>
+    <div class="topnav">
+      <a class="active" href="../index.html">Home</a>
+      <a class="active" href="../about.html">About Us</a>
+      <input type="text" placeholder="Search..">
+    </div>
+  </header>
 
   <div class="header">
     <script>
@@ -50,25 +55,25 @@
       function userData() {
         var loc = document.forms["LOCATIONform"]["locccc"].value;
         if (loc == "") {
-          alert("Name must be filled out");
+          console.log("Name must be filled out");
           return false;
         } else {
-          alert("SUCCESS! Location: " + loc);
+          console.log("SUCCESS! Location: " + loc);
+
         }
       }
     </script>
-    
+
   </div>
   <h2 class="break"> Find Tech Opportunities near You</h2>
-</head>
 
-<body>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
       https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
 </body>
 
 </html>

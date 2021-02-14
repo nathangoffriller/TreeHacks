@@ -39,6 +39,18 @@ function validateForm() {
 }
 
 function userData() {
-    var location = document.getElementById('Location').value;
-    alert(location);
+    var loc = document.forms["LOCATIONform"]["locccc"].value;
+    if (loc == "") {
+      console.log("Name must be filled out");
+      return false;
+    } else {
+      console.log("SUCCESS! Location: " + loc);
+      
+    }
 }
+
+function toMap() {
+
+}
+
+//window.location.pathname = '/relative-link'
