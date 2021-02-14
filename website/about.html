@@ -1,22 +1,48 @@
-<html lang = "en"> 
-  <head>
-    <title> About </title>
-    <link rel="stylesheet" href="about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="app.js"></script>
-    <base href="https://scisearch.firebaseapp.com/">
-    </base>
-    <script type="text/javascript" src="https://scisearch.firebaseapp.com/runtime.a66f828dca56eeb90e02.js"></script>
-    <script type="text/javascript" src="https://scisearch.firebaseapp.com/polyfills.14fc14f3e029a8cfd046.js"></script>
-    <script type="text/javascript" src="https://SciSearch.firebaseapp.com/main.2eb2046276073df361f7.js"></script>
-  </head>
-  </head>
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <title>Home</title>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyAshSFMcuw-1uZUPtwgUoIzOYro1LDsRD8",
+      authDomain: "treehacks-scisearch.firebaseapp.com",
+      projectId: "treehacks-scisearch",
+      storageBucket: "treehacks-scisearch.appspot.com",
+      messagingSenderId: "520773707435",
+      appId: "1:520773707435:web:2fd6a2decc6299712cf9ee",
+      measurementId: "G-VJGGRSZPSZ"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+</script>
+
+<script src="app.js" defer></script>
+
+</head>
+
   <body> 
     <header>
       <div class="topnav">
-        <a class="active" href="index.html">Home</a>
+        <a class="active" href="https://treehacks-scisearch.web.app/">Home</a>
         <a class="active" href="about.html">About Us</a>
+        <a class="active" href="testGIS.html" testGIS></a>
         <input type="text" placeholder="Search..">
       </div>
     </header>
@@ -24,16 +50,11 @@
      <div class="header">
         <h1>About Us</h1>
      </div>
-    <h2 href = "mailto:someone@gmail.com" class = "animated animatedFadeInUp fadeInUp"> Laura Siu</h2>
+    <h2><a href = "mailto:lmsiu1289@gmail.com" class = "animated animatedFadeInUp fadeInUp"> Laura Siu</a></h2>
     <div class = "description animated animatedFadeInUp fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <h2 href = "mailto:someone@gmail.com"  class = "animated animatedFadeInUp fadeInUp">Nathan Chin</h2>
+    <h2><a href = "mailto:nathangoffriller@berkeley.edu"  class = "animated animatedFadeInUp fadeInUp">Nathan Chin</a></h2>
     <div class = "description animated animatedFadeInUp fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <h2 href = "mailto:someone@gmail.com"  class = "animated animatedFadeInUp fadeInUp">Auraiporn Auksorn</h2>
+    <h2><a href = "mailto:aauksorn@cpp.edu"  class = "animated animatedFadeInUp fadeInUp">Auraiporn Auksorn</a></h2>
     <div class = "description animated animatedFadeInUp fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> 
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>  
 </body>
 </html>

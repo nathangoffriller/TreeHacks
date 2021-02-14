@@ -1,79 +1,63 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Tech Opportunities </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script type="module" src="milsymbol-2.0.0/src/milsymbol.js"></script>
-  <script src="https://js.arcgis.com/4.18/"></script>
-  <script type="text/javascript" src="app.js"></script>
-  <base href="https://scisearch.firebaseapp.com/">
-  </base>
-  <script type="text/javascript" src="https://scisearch.firebaseapp.com/runtime.a66f828dca56eeb90e02.js"></script>
-  <script type="text/javascript" src="https://scisearch.firebaseapp.com/polyfills.14fc14f3e029a8cfd046.js"></script>
-  <script type="text/javascript" src="https://SciSearch.firebaseapp.com/main.2eb2046276073df361f7.js"></script>
+  <title>Home</title>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+var firebaseConfig = {
+    apiKey: "AIzaSyAshSFMcuw-1uZUPtwgUoIzOYro1LDsRD8",
+    authDomain: "treehacks-scisearch.firebaseapp.com",
+    projectId: "treehacks-scisearch",
+    storageBucket: "treehacks-scisearch.appspot.com",
+    messagingSenderId: "520773707435",
+    appId: "1:520773707435:web:2fd6a2decc6299712cf9ee",
+    measurementId: "G-VJGGRSZPSZ"
+  };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+</script>
+
+<script src="app.js" defer></script>
+
 </head>
 
 <body>
   <header>
     <div class="topnav">
-      <a class="active" href="#">Home</a>
-      <a class="active" href="../about.html">About Us</a>
+      <a class="active" href="https://treehacks-scisearch.web.app/">Home</a>
+      <a class="active" href="about.html">About Us</a>
+      <a class="active" href="testGIS.html" testGIS></a>
       <input type="text" placeholder="Search..">
     </div>
   </header>
 
   <div class="header">
-    <script>
-      function validateForm() {
-        var x = document.forms["locationForm"]["currentLocation"].value;
-        if (x == "") {
-          alert("Name must be filled out");
-          return false;
-        } else {
-          alert("SUCCESS! Location: " + x);
-        }
-      }
-    </script>
-    <form name="locationForm" action="" onsubmit="return validateForm()" method="post">
-      Name: <input type="text" name="currentLocation">
-      <input type="submit" value="Submit">
-    </form>
-
     <form name=LOCATIONform>
       <h1 class="welcome_msg">Welcome to SciSearch!</h1>
       <h1> Find Tech Opportunities Near You </h1>
       <div class="form-box">
         <input type="text" id="field1" class="search-field roles" placeholder="Roles">
         <input type="text" name="locccc" id="Location" class="search-field location" placeholder="Location">
-        <button class="search-btn" type="button" id="search" onclick="return userData()"> Search </button>
+        <button class="search-btn" type="button" id="search" onClick="userData()"> Search </button>
       </div>
     </form>
-    <script>
-      function userData() {
-        var loc = document.forms["LOCATIONform"]["locccc"].value;
-        if (loc == "") {
-          console.log("Name must be filled out");
-          return false;
-        } else {
-          console.log("SUCCESS! Location: " + loc);
-
-        }
-      }
-    </script>
-
   </div>
-  <h2 class="break"> Find Tech Opportunities near You</h2>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
-
 </body>
 
 </html>
