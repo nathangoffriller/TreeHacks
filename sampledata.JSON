@@ -1,0 +1,51 @@
+{
+    "name": "LAHacks"
+    "website": "https://lahacks.com/"
+    "date": "March 21"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Coding Confrence"
+    "website": "https://codingconfrence.com/"
+    "date": "February 20"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "MakeHarvard"
+    "website": "https://www.makeharvard.io/"
+    "date": "February 13"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Calgory Hacks"
+    "website": "https://calgaryhacks.ca/"
+    "date": "February 13"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Hack and Wellness"
+    "website": "https://organize.mlh.io/participants/events/6456-hack-and-wellness"
+    "date": "February 19"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Intro. to Java Classes"
+    "website": "https://mtsac.edu/
+    "date": "February 22"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Girls Who Code Meeting"
+    "website": "https://sandimashighschool.com/"
+    "date": "March 10"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Femmineers Confrence"
+    "website": "https://Femineers.org/"
+    "date": "April 9"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Into to Computer Science Internship"
+    "website": "https://introinternships.org/"
+    "date": "June 10"
+    "location": [25.2084, 55.2719]
+},{
+    "name": "Coding Camp"
+    "website": "https://sandimascity.org/"
+    "date": "July 20"
+    "location": [25.2084, 55.2719]
+}
