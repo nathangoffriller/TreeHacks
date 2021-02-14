@@ -1,7 +1,7 @@
 # SciSearch
 ## Opening doors for Computer Science students one project at a time. 
 
-This website shows users Computer Science opportunities around them.
+This website shows users Computer Science students opportunities around them.
 
 ### How we built it
 SciSearch was built using HTML, JavaScript, ArcGIS, and Firebox. HTML and JavaScript were for the front-end and back-end development respectively, ArcGIS was used for the map features, and Firebox was used to launch our app. 
